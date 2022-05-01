@@ -1,0 +1,265 @@
+
+:root {
+  --color-primary: #1CA5E8;
+  --color-secondary: #72DF4B;
+  --color-accent: #E8687F;
+  --color-font: white;
+  --color-font-name: black;
+  --color-font-unfinished: #EF7055;
+  --color-circle: white;
+  --color-headers: #323232;
+  --color-headers-font: #6982A0;
+  --color-box: #00ab70;
+  --color-body: #918ca4;
+  --color-body-darker: #5c5577;
+  --color-border: black;
+  --color-background: #1D7AE7;
+  --color-background-unfinished: #FAC7C7;
+  --color-box-shadow: #8D8C90;
+  --border-radius: 30px;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+/* card style */
+
+.card {
+	width: 18rem;
+	height: 35rem;
+}
+
+.card-text {
+	text-align: center;
+}
+
+.card-img {
+	height: 26rem;
+	object-fit: contain;
+}
+
+.card-price {
+	color: red;
+	margin-bottom: 20px;
+}
+
+.card-price:hover {
+	color: #0d6efd;
+}
+
+.link-list {
+	text-decoration: none;
+}
+
+/* Card Image hover */
+
+.content {
+	position: relative;
+	width: 90%;
+	max-width: 400px;
+	margin: auto;
+	overflow: hidden;
+}
+
+.content .content-overlay {
+	background: rgba(0, 0, 0, 0.7);
+	position: absolute;
+	height: 99%;
+	width: 100%;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	opacity: 0;
+	-webkit-transition: all 0.4s ease-in-out 0s;
+	-moz-transition: all 0.4s ease-in-out 0s;
+	transition: all 0.4s ease-in-out 0s;
+}
+
+.content:hover .content-overlay {
+	opacity: 1;
+	z-index: 10;
+}
+
+.content-image {
+	width: 100%;
+	z-index: -1;
+}
+
+.content-details {
+	position: absolute;
+	text-align: center;
+	padding-left: 1em;
+	padding-right: 1em;
+	width: 100%;
+	top: 50%;
+	left: 50%;
+	opacity: 0;
+	z-index: 11;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	-webkit-transition: all 0.3s ease-in-out 0s;
+	-moz-transition: all 0.3s ease-in-out 0s;
+	transition: all 0.3s ease-in-out 0s;
+}
+
+.content:hover .content-details {
+	top: 50%;
+	left: 50%;
+	opacity: 1;
+}
+
+
+
+
+.content-details h3 {
+	color: #fff;
+	font-weight: 500;
+	letter-spacing: 0.15em;
+	margin-bottom: 0.5em;
+	text-transform: capitalize;
+}
+
+.content-details p {
+	color: #fff;
+	font-size: 1em;
+	text-align: left;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 10;
+	overflow: hidden;
+	/*! autoprefixer: off */
+	-webkit-box-orient: vertical;
+	/*! autoprefixer: on */
+	word-break: break-word;
+}
+
+
+.fadeIn-bottom {
+	top: 100%;
+}
+
+.fadeIn-top {
+	top: 20%;
+}
+
+.fadeIn-left {
+	left: 20%;
+}
+
+.fadeIn-right {
+	left: 80%;
+}
+
+/* BookDetails */
+
+.bookDetails__subtitle {
+	margin: 2rem 0;
+}
+
+.bookDetails__p {
+	text-align: center;
+	margin-top: 1.5rem;
+	margin-bottom: 2rem;
+}
+
+.bookDetails__price {
+	color: red;
+	margin: 1.5rem 0;
+}
+
+.booksDetails__author {
+	display: flex;
+	justify-content: space-between;
+}
+
+.booksDetails__authorColor {
+	color: #000;
+}
+
+.booksDetails__type {
+	display: flex;
+	justify-content: space-between;
+}
+
+.bookDetails__description {
+	margin: 1.5rem 0;
+}
+
+.booksDetails__bestSeller {
+	color: red;
+	margin-left: 4px;
+}
+
+.booksDetails__format {
+	margin-left: 4px;
+}
+
+/* AuthorDetails */
+
+.authorDetails__fullName {
+	margin-bottom: 2rem;
+}
+
+.authorDetails__born {
+	display: flex;
+	justify-content: space-between;
+}
+
+.authorDetails__bornAddress {
+	color: green;
+	margin-left: 4px;
+}
+
+.authorDetails__btn {
+	text-align: center;
+	padding: 2rem 0;
+}
+
+.authorDetails__type {
+	display: flex;
+	justify-content: space-between;
+}
+
+.authorDetails__yearsActive {
+	margin-left: 4px;
+}
+
+.authorDetails__books {
+	margin: 1.5rem 0;
+}
+
+.navbar_link-dashboard {
+  color: var(--color-font);
+  margin-left: -68rem;
+}
+
+.navbar_link-profile {
+  color: var(--color-font);
+  margin-left: -59rem;
+}
+
+.navbar_link-user {
+  margin-top: 0.4rem;
+  margin-right: -10rem;
+}
+
+.navbar_brand {
+  margin-left: -21rem;
+}
